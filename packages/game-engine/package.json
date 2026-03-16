@@ -1,0 +1,20 @@
+{
+  "name": "@sudoku-v/game-engine",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "dependencies": {
+    "@sudoku-v/shared-types": "workspace:*"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "lint": "tsc --noEmit -p tsconfig.json",
+    "test": "tsc --noEmit -p tsconfig.json"
+  }
+}
+
